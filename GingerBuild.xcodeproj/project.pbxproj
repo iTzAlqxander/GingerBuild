@@ -14,6 +14,8 @@
 		08B004B529083EF200AD0BF6 /* GingerBuild.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08B004B329083EF200AD0BF6 /* GingerBuild.xcdatamodeld */; };
 		08B004B729083EF600AD0BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B004B629083EF600AD0BF6 /* Assets.xcassets */; };
 		08B004BA29083EF600AD0BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B004B829083EF600AD0BF6 /* LaunchScreen.storyboard */; };
+		FD52D69C2915ACDC008AB211 /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52D69B2915ACDC008AB211 /* tableViewController.swift */; };
+		FD52D69E2915AD07008AB211 /* reserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52D69D2915AD07008AB211 /* reserveViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		08B004B629083EF600AD0BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B004B929083EF600AD0BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08B004BB29083EF600AD0BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD52D69B2915ACDC008AB211 /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
+		FD52D69D2915AD07008AB211 /* reserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reserveViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +65,8 @@
 				08B004AA29083EF200AD0BF6 /* AppDelegate.swift */,
 				08B004AC29083EF200AD0BF6 /* SceneDelegate.swift */,
 				08B004AE29083EF200AD0BF6 /* ViewController.swift */,
+				FD52D69B2915ACDC008AB211 /* tableViewController.swift */,
+				FD52D69D2915AD07008AB211 /* reserveViewController.swift */,
 				08B004B029083EF200AD0BF6 /* Main.storyboard */,
 				08B004B629083EF600AD0BF6 /* Assets.xcassets */,
 				08B004B829083EF600AD0BF6 /* LaunchScreen.storyboard */,
@@ -145,6 +151,8 @@
 				08B004AF29083EF200AD0BF6 /* ViewController.swift in Sources */,
 				08B004AB29083EF200AD0BF6 /* AppDelegate.swift in Sources */,
 				08B004AD29083EF200AD0BF6 /* SceneDelegate.swift in Sources */,
+				FD52D69C2915ACDC008AB211 /* tableViewController.swift in Sources */,
+				FD52D69E2915AD07008AB211 /* reserveViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
