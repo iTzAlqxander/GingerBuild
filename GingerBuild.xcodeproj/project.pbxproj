@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0853E1EB291EBF8200EB870F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0853E1EA291EBF8200EB870F /* GoogleService-Info.plist */; };
+		0853E1EE291EC0CA00EB870F /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 0853E1ED291EC0CA00EB870F /* FirebaseDatabase */; };
 		08B004AB29083EF200AD0BF6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B004AA29083EF200AD0BF6 /* AppDelegate.swift */; };
 		08B004AD29083EF200AD0BF6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B004AC29083EF200AD0BF6 /* SceneDelegate.swift */; };
 		08B004AF29083EF200AD0BF6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08B004AE29083EF200AD0BF6 /* ViewController.swift */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0853E1EA291EBF8200EB870F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		08B004A729083EF200AD0BF6 /* GingerBuild.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GingerBuild.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08B004AA29083EF200AD0BF6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08B004AC29083EF200AD0BF6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0853E1EE291EC0CA00EB870F /* FirebaseDatabase in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +76,7 @@
 				08B004B829083EF600AD0BF6 /* LaunchScreen.storyboard */,
 				08B004BB29083EF600AD0BF6 /* Info.plist */,
 				08B004B329083EF200AD0BF6 /* GingerBuild.xcdatamodeld */,
+				0853E1EA291EBF8200EB870F /* GoogleService-Info.plist */,
 			);
 			path = GingerBuild;
 			sourceTree = "<group>";
@@ -92,6 +97,9 @@
 			dependencies = (
 			);
 			name = GingerBuild;
+			packageProductDependencies = (
+				0853E1ED291EC0CA00EB870F /* FirebaseDatabase */,
+			);
 			productName = GingerBuild;
 			productReference = 08B004A729083EF200AD0BF6 /* GingerBuild.app */;
 			productType = "com.apple.product-type.application";
@@ -120,6 +128,9 @@
 				Base,
 			);
 			mainGroup = 08B0049E29083EF200AD0BF6;
+			packageReferences = (
+				0853E1EC291EC0CA00EB870F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 08B004A829083EF200AD0BF6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08B004BA29083EF600AD0BF6 /* LaunchScreen.storyboard in Resources */,
+				0853E1EB291EBF8200EB870F /* GoogleService-Info.plist in Resources */,
 				08B004B729083EF600AD0BF6 /* Assets.xcassets in Resources */,
 				08B004B229083EF200AD0BF6 /* Main.storyboard in Resources */,
 			);
@@ -378,6 +390,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0853E1EC291EC0CA00EB870F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0853E1ED291EC0CA00EB870F /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0853E1EC291EC0CA00EB870F /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		08B004B329083EF200AD0BF6 /* GingerBuild.xcdatamodeld */ = {

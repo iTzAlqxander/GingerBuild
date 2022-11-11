@@ -6,10 +6,14 @@
 //
 
 import UIKit
+import Firebase
 
 class reserveViewController: UIViewController {
     
-    var counter = 10
+    let dataBase = Database.database().reference()
+
+    var totalSecond = 600
+    var timer:Timer?
     
     @IBOutlet weak var tableLabel: UILabel!
 
@@ -21,18 +25,33 @@ class reserveViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateCounter), userInfo: nil, repeats: true)
+        
+        
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        startTimer()
         
         
         tableLabel.text = table
-        
     }
     
-    @objc func updateCounter() {
-        //example functionality
-        if counter > 0 {
-            countDownLabel.text = ("\(counter) until sent back")
-            counter -= 1
+    func startTimer(){
+    timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(countdown), userInfo: nil, repeats: true)
+    }
+
+    @objc func countdown() {
+        var minutes: Int
+        var seconds: Int
+
+        if totalSecond == 1 {
+            timer?.invalidate()
+            dataBase.child("TableTaken").updateChildValues([table: false])
+            
         }
+        totalSecond = totalSecond - 1
+
+        minutes = (totalSecond % 3600) / 60
+        seconds = (totalSecond % 3600) % 60
+        countDownLabel.text = String(format: "%02d:%02d", minutes, seconds)
     }
 }
