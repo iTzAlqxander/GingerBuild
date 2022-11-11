@@ -12,7 +12,7 @@ class reserveViewController: UIViewController {
     
     let dataBase = Database.database().reference()
 
-    var totalSecond = 600
+    var totalSecond = 5
     var timer:Timer?
     
     @IBOutlet weak var tableLabel: UILabel!
@@ -45,9 +45,15 @@ class reserveViewController: UIViewController {
 
         if totalSecond == 1 {
             timer?.invalidate()
+            performSegue(withIdentifier: "backTableSelect", sender: self)
             dataBase.child("TableTaken").updateChildValues([table: false])
+            countDownLabel.textColor = .black
             
         }
+        if totalSecond < 10{
+            countDownLabel.textColor = .red
+        }
+        
         totalSecond = totalSecond - 1
 
         minutes = (totalSecond % 3600) / 60
