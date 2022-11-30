@@ -26,12 +26,12 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kQu-z3-mDy">
-                                <rect key="frame" x="413" y="733" width="75" height="35"/>
+                                <rect key="frame" x="292" y="900" width="172" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="To Reserve Tables"/>
                                 <connections>
-                                    <segue destination="8Cb-Wr-2wN" kind="show" id="Ry2-Me-Mjg"/>
+                                    <segue destination="8Cb-Wr-2wN" kind="show" id="Pn1-df-EX9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -55,7 +55,7 @@
             <objects>
                 <viewController id="8Cb-Wr-2wN" customClass="tableViewController" customModule="GingerBuild" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sM7-WV-q2z">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3E-jR-Xkh">
@@ -130,7 +130,7 @@
             <objects>
                 <viewController id="UGe-eU-sYL" customClass="reserveViewController" customModule="GingerBuild" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="z1v-VA-NlP">
-                        <rect key="frame" x="0.0" y="0.0" width="704" height="984"/>
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Table" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Dx-IF-EMK">
@@ -183,7 +183,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Group" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTj-If-l0N">
-                                <rect key="frame" x="273" y="333" width="160" height="53"/>
+                                <rect key="frame" x="273" y="333" width="224" height="53"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -211,7 +211,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="9e8-HX-T2y"/>
+        <segue reference="Pn1-df-EX9"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Background-Image" width="474" height="842"/>
