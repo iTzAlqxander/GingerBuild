@@ -60,4 +60,8 @@ class reserveViewController: UIViewController {
         seconds = (totalSecond % 3600) % 60
         countDownLabel.text = String(format: "%02d:%02d", minutes, seconds)
     }
+    @IBAction func submit(_ sender: UIButton) {
+        
+        
+    }
 }
