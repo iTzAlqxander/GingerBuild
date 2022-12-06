@@ -41,6 +41,9 @@
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Charity Link"/>
+                                <connections>
+                                    <action selector="charityLink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7b-vz-53j"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
