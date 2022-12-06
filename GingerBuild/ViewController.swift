@@ -47,6 +47,10 @@ class ViewController: UIViewController {
         }
     }
 
-
+    @IBAction func charityLink(_ sender: Any) {
+        
+    
+        
+    }
 }
 
