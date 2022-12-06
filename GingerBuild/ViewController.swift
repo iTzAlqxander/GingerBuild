@@ -7,6 +7,7 @@
 
 import UIKit
 import AVFoundation
+import SafariServices
 
 var player: AVAudioPlayer?
 
@@ -48,7 +49,9 @@ class ViewController: UIViewController {
     }
 
     @IBAction func charityLink(_ sender: Any) {
-        
+        if let url = URL(string: "https://www.asoldiersjourneyhome.org/") {
+            UIApplication.shared.open(url)
+        }
     }
 }
 
