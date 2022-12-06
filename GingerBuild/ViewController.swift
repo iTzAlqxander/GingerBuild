@@ -19,6 +19,7 @@ class ViewController: UIViewController {
             // stop playback
             
             player.stop()
+            
         }
         else {
             //set up player, and play
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
                 guard let player = player else {
                     return
                 }
+                player.numberOfLoops = -1
                 player.play()
             }
             catch {
