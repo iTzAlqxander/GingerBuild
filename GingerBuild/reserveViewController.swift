@@ -21,6 +21,7 @@ class reserveViewController: UIViewController {
     @IBOutlet weak var countDownLabel: UILabel!
     
     var table = String()
+    var club = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
