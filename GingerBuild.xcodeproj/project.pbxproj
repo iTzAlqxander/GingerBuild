@@ -18,6 +18,7 @@
 		08B004BA29083EF600AD0BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B004B829083EF600AD0BF6 /* LaunchScreen.storyboard */; };
 		FD52D69C2915ACDC008AB211 /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52D69B2915ACDC008AB211 /* tableViewController.swift */; };
 		FD52D69E2915AD07008AB211 /* reserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52D69D2915AD07008AB211 /* reserveViewController.swift */; };
+		FFC129AE293A653200BA2AA9 /* Fortnite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFC129AD293A653200BA2AA9 /* Fortnite.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		08B004BB29083EF600AD0BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD52D69B2915ACDC008AB211 /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		FD52D69D2915AD07008AB211 /* reserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reserveViewController.swift; sourceTree = "<group>"; };
+		FFC129AD293A653200BA2AA9 /* Fortnite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fortnite.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		08B004A929083EF200AD0BF6 /* GingerBuild */ = {
 			isa = PBXGroup;
 			children = (
+				FFC129AD293A653200BA2AA9 /* Fortnite.mp3 */,
 				08B004AA29083EF200AD0BF6 /* AppDelegate.swift */,
 				08B004AC29083EF200AD0BF6 /* SceneDelegate.swift */,
 				08B004AE29083EF200AD0BF6 /* ViewController.swift */,
@@ -149,6 +152,7 @@
 				0853E1EB291EBF8200EB870F /* GoogleService-Info.plist in Resources */,
 				08B004B729083EF600AD0BF6 /* Assets.xcassets in Resources */,
 				08B004B229083EF200AD0BF6 /* Main.storyboard in Resources */,
+				FFC129AE293A653200BA2AA9 /* Fortnite.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
