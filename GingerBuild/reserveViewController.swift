@@ -16,8 +16,7 @@ class reserveViewController: UIViewController {
     var timer:Timer?
     
     @IBOutlet weak var tableLabel: UILabel!
-
-    
+    @IBOutlet weak var clubTextField: UITextField!
     @IBOutlet weak var countDownLabel: UILabel!
     
     var table = String()
@@ -60,5 +59,9 @@ class reserveViewController: UIViewController {
         minutes = (totalSecond % 3600) / 60
         seconds = (totalSecond % 3600) % 60
         countDownLabel.text = String(format: "%02d:%02d", minutes, seconds)
+    }
+    @IBAction func submit(_ sender: UIButton) {
+        
+        
     }
 }
