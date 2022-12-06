@@ -16,8 +16,7 @@ class reserveViewController: UIViewController {
     var timer:Timer?
     
     @IBOutlet weak var tableLabel: UILabel!
-
-    
+    @IBOutlet weak var clubTextField: UITextField!
     @IBOutlet weak var countDownLabel: UILabel!
     
     var table = String()
