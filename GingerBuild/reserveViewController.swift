@@ -12,16 +12,24 @@ class reserveViewController: UIViewController {
     
     let dataBase = Database.database().reference()
 
-    var totalSecond = 5
+    var totalSecond = 30
     var timer:Timer?
     
     @IBOutlet weak var tableLabel: UILabel!
     @IBOutlet weak var clubTextField: UITextField!
     @IBOutlet weak var countDownLabel: UILabel!
     
+    @IBOutlet weak var captainTextField: UITextField!
+    @IBOutlet weak var member2TextField: UITextField!
+    @IBOutlet weak var member3TextField: UITextField!
+    @IBOutlet weak var member4TextField: UITextField!
+    
     var table = String()
     var club = String()
-    
+    var beingUsed = "beingUsed"
+    var membersArray: [String] = []
+    var isTaken = "isTaken"
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -46,7 +54,7 @@ class reserveViewController: UIViewController {
         if totalSecond == 1 {
             timer?.invalidate()
             performSegue(withIdentifier: "backTableSelect", sender: self)
-            dataBase.child("TableTaken").updateChildValues([table: false])
+            dataBase.child("Tables").child(table).updateChildValues([beingUsed: false])
             countDownLabel.textColor = .black
             
         }
@@ -62,6 +70,30 @@ class reserveViewController: UIViewController {
     }
     @IBAction func submit(_ sender: UIButton) {
         
+        timer?.invalidate()
         
+        navigationController?.navigationBar.tintColor = UIColor.lightGray
+        navigationController?.navigationBar.isHidden = true
+        
+        var cap1 = captainTextField.text ?? "Error"
+        var mem2 = member2TextField.text ?? "Error"
+        var mem3 = member3TextField.text ?? "Error"
+        var mem4 = member4TextField.text ?? "Error"
+
+        
+        membersArray.append(cap1)
+        membersArray.append(mem2)
+        membersArray.append(mem3)
+        membersArray.append(mem4)
+
+        
+        club = clubTextField.text ?? "Error"
+        dataBase.child("Tables").child(table).updateChildValues(["Club": club])
+        
+        dataBase.child("Tables").child(table).updateChildValues(["Members": membersArray])
+        
+        dataBase.child("Tables").child(table).updateChildValues(["isTaken": true])
+
+
     }
 }

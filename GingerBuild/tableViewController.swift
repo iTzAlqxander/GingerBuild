@@ -13,16 +13,32 @@ class tableViewController: UIViewController {
     let dataBase = Database.database().reference()
 
     var table = ""
-    var taken = true
+    var used = true
+    var beingUsed = "beingUsed"
+    var taken = "isTaken"
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dataBase.child("TableTaken").updateChildValues(["table1": false])
-        dataBase.child("TableTaken").updateChildValues(["table2": false])
-        dataBase.child("TableTaken").updateChildValues(["table3": false])
-        dataBase.child("TableTaken").updateChildValues(["table4": false])
-
+        dataBase.child("Tables").child("table1").updateChildValues([beingUsed: false])
+        dataBase.child("Tables").child("table2").updateChildValues([beingUsed: false])
+        dataBase.child("Tables").child("table3").updateChildValues([beingUsed: false])
+        dataBase.child("Tables").child("table4").updateChildValues([beingUsed: false])
+        
+        dataBase.child("Tables").child("table1").updateChildValues(["Members": "None"])
+        dataBase.child("Tables").child("table2").updateChildValues(["Members": "None"])
+        dataBase.child("Tables").child("table3").updateChildValues(["Members": "None"])
+        dataBase.child("Tables").child("table4").updateChildValues(["Members": "None"])
+        
+        dataBase.child("Tables").child("table1").updateChildValues(["Club": "None"])
+        dataBase.child("Tables").child("table2").updateChildValues(["Club": "None"])
+        dataBase.child("Tables").child("table3").updateChildValues(["Club": "None"])
+        dataBase.child("Tables").child("table4").updateChildValues(["Club": "None"])
+        
+        dataBase.child("Tables").child("table1").updateChildValues([taken: false])
+        dataBase.child("Tables").child("table2").updateChildValues([taken: false])
+        dataBase.child("Tables").child("table3").updateChildValues([taken: false])
+        dataBase.child("Tables").child("table4").updateChildValues([taken: false])
         
     }
     
@@ -30,26 +46,26 @@ class tableViewController: UIViewController {
     
     @IBAction func whenTable1Pressed(_ sender: UIButton) {
         table = "table1"
-        dataBase.child("TableTaken").updateChildValues([table: taken])
+        dataBase.child("Tables").child("table1").updateChildValues([beingUsed: used])
         performSegue(withIdentifier: "toReserve", sender: self)
     
     }
     
     @IBAction func whenTable2Pressed(_ sender: UIButton) {
         table = "table2"
-        dataBase.child("TableTaken").updateChildValues([table: taken])
+        dataBase.child("Tables").child("table2").updateChildValues([beingUsed: used])
         performSegue(withIdentifier: "toReserve", sender: self)
     }
     
     @IBAction func whenTable3Pressed(_ sender: UIButton) {
         table = "table3"
-        dataBase.child("TableTaken").updateChildValues([table: taken])
+        dataBase.child("Tables").child("table3").updateChildValues([beingUsed: used])
         performSegue(withIdentifier: "toReserve", sender: self)
     }
     
     @IBAction func whenTable4Pressed(_ sender: UIButton) {
         table = "table4"
-        dataBase.child("TableTaken").updateChildValues([table: taken])
+        dataBase.child("Tables").child("table4").updateChildValues([beingUsed: used])
         performSegue(withIdentifier: "toReserve", sender: self)
     }
     
