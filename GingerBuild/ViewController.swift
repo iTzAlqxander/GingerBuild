@@ -53,12 +53,10 @@ class ViewController: UIViewController {
         if let url = URL(string: "https://www.asoldiersjourneyhome.org/") {
             UIApplication.shared.open(url)
         }
-//        @IBAction func emailLink(_ sender:Any) {
-//            if let url = URL(string: "") {
-//                UIApplication.shared.open(u)
-//            }
-//        }
     }
     
+    @IBAction func sponsorEmailButton(_ sender: Any) {
+  
+    }
 }
 
