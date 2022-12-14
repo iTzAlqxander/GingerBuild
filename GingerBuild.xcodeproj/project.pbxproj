@@ -16,9 +16,9 @@
 		08B004B529083EF200AD0BF6 /* GingerBuild.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08B004B329083EF200AD0BF6 /* GingerBuild.xcdatamodeld */; };
 		08B004B729083EF600AD0BF6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08B004B629083EF600AD0BF6 /* Assets.xcassets */; };
 		08B004BA29083EF600AD0BF6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08B004B829083EF600AD0BF6 /* LaunchScreen.storyboard */; };
+		4DE72EB32942F159007CEF89 /* Tables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DE72EB22942F159007CEF89 /* Tables.swift */; };
 		FD52D69C2915ACDC008AB211 /* tableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52D69B2915ACDC008AB211 /* tableViewController.swift */; };
 		FD52D69E2915AD07008AB211 /* reserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52D69D2915AD07008AB211 /* reserveViewController.swift */; };
-		FF44C823293FAE910016AD69 /* boom.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FF44C822293FAE910016AD69 /* boom.mp3 */; };
 		FFC129AE293A653200BA2AA9 /* Fortnite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FFC129AD293A653200BA2AA9 /* Fortnite.mp3 */; };
 /* End PBXBuildFile section */
 
@@ -33,9 +33,9 @@
 		08B004B629083EF600AD0BF6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08B004B929083EF600AD0BF6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08B004BB29083EF600AD0BF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE72EB22942F159007CEF89 /* Tables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tables.swift; sourceTree = "<group>"; };
 		FD52D69B2915ACDC008AB211 /* tableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewController.swift; sourceTree = "<group>"; };
 		FD52D69D2915AD07008AB211 /* reserveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reserveViewController.swift; sourceTree = "<group>"; };
-		FF44C822293FAE910016AD69 /* boom.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = boom.mp3; sourceTree = "<group>"; };
 		FFC129AD293A653200BA2AA9 /* Fortnite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Fortnite.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,12 +71,12 @@
 			isa = PBXGroup;
 			children = (
 				FFC129AD293A653200BA2AA9 /* Fortnite.mp3 */,
-				FF44C822293FAE910016AD69 /* boom.mp3 */,
 				08B004AA29083EF200AD0BF6 /* AppDelegate.swift */,
 				08B004AC29083EF200AD0BF6 /* SceneDelegate.swift */,
 				08B004AE29083EF200AD0BF6 /* ViewController.swift */,
 				FD52D69B2915ACDC008AB211 /* tableViewController.swift */,
 				FD52D69D2915AD07008AB211 /* reserveViewController.swift */,
+				4DE72EB22942F159007CEF89 /* Tables.swift */,
 				08B004B029083EF200AD0BF6 /* Main.storyboard */,
 				08B004B629083EF600AD0BF6 /* Assets.xcassets */,
 				08B004B829083EF600AD0BF6 /* LaunchScreen.storyboard */,
@@ -151,7 +151,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF44C823293FAE910016AD69 /* boom.mp3 in Resources */,
 				08B004BA29083EF600AD0BF6 /* LaunchScreen.storyboard in Resources */,
 				0853E1EB291EBF8200EB870F /* GoogleService-Info.plist in Resources */,
 				08B004B729083EF600AD0BF6 /* Assets.xcassets in Resources */,
@@ -169,6 +168,7 @@
 			files = (
 				08B004B529083EF200AD0BF6 /* GingerBuild.xcdatamodeld in Sources */,
 				08B004AF29083EF200AD0BF6 /* ViewController.swift in Sources */,
+				4DE72EB32942F159007CEF89 /* Tables.swift in Sources */,
 				08B004AB29083EF200AD0BF6 /* AppDelegate.swift in Sources */,
 				08B004AD29083EF200AD0BF6 /* SceneDelegate.swift in Sources */,
 				FD52D69C2915ACDC008AB211 /* tableViewController.swift in Sources */,
