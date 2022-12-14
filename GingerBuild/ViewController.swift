@@ -16,11 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         if let player = player, player.isPlaying {
             // stop playback
             
             player.stop()
-            
+
         }
         else {
             //set up player, and play

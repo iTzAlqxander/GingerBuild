@@ -40,8 +40,8 @@ class tableViewController: UIViewController {
         dataBase.child("Tables").child("table3").updateChildValues([taken: false])
         dataBase.child("Tables").child("table4").updateChildValues([taken: false])
         
+        
     }
-    
     
     
     @IBAction func whenTable1Pressed(_ sender: UIButton) {
