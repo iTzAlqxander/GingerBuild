@@ -16,11 +16,12 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
         if let player = player, player.isPlaying {
             // stop playback
             
             player.stop()
-            
+
         }
         else {
             //set up player, and play
@@ -52,6 +53,12 @@ class ViewController: UIViewController {
         if let url = URL(string: "https://www.asoldiersjourneyhome.org/") {
             UIApplication.shared.open(url)
         }
+//        @IBAction func emailLink(_ sender:Any) {
+//            if let url = URL(string: "") {
+//                UIApplication.shared.open(u)
+//            }
+//        }
     }
+    
 }
 

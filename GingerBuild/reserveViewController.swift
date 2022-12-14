@@ -23,13 +23,13 @@ class reserveViewController: UIViewController {
     @IBOutlet weak var member2TextField: UITextField!
     @IBOutlet weak var member3TextField: UITextField!
     @IBOutlet weak var member4TextField: UITextField!
-    
+
     var table = String()
     var club = String()
     var beingUsed = "beingUsed"
     var membersArray: [String] = []
     var isTaken = "isTaken"
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,8 +38,7 @@ class reserveViewController: UIViewController {
     }
     override func viewWillAppear(_ animated: Bool) {
         startTimer()
-        
-        
+        countDownLabel.text = "00:\(totalSecond)"
         tableLabel.text = table
     }
     
@@ -93,7 +92,6 @@ class reserveViewController: UIViewController {
         dataBase.child("Tables").child(table).updateChildValues(["Members": membersArray])
         
         dataBase.child("Tables").child(table).updateChildValues(["isTaken": true])
-
 
     }
 }

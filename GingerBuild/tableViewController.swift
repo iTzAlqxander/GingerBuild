@@ -46,7 +46,6 @@ class tableViewController: UIViewController {
     }
     
     
-    
     @IBAction func whenTable1Pressed(_ sender: UIButton) {
         table = "table1"
         dataBase.child("Tables").child("table1").updateChildValues([beingUsed: used])
