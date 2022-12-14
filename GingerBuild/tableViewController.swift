@@ -40,6 +40,8 @@ class tableViewController: UIViewController {
         dataBase.child("Tables").child("table3").updateChildValues([taken: false])
         dataBase.child("Tables").child("table4").updateChildValues([taken: false])
         
+         
+        
         
     }
     
@@ -48,25 +50,32 @@ class tableViewController: UIViewController {
         table = "table1"
         dataBase.child("Tables").child("table1").updateChildValues([beingUsed: used])
         performSegue(withIdentifier: "toReserve", sender: self)
-    
+        
+        dataBase.child("Tables").child("table1").updateChildValues([beingUsed: true])
     }
     
     @IBAction func whenTable2Pressed(_ sender: UIButton) {
         table = "table2"
         dataBase.child("Tables").child("table2").updateChildValues([beingUsed: used])
         performSegue(withIdentifier: "toReserve", sender: self)
+        
+        dataBase.child("Tables").child("table2").updateChildValues([beingUsed: true])
     }
     
     @IBAction func whenTable3Pressed(_ sender: UIButton) {
         table = "table3"
         dataBase.child("Tables").child("table3").updateChildValues([beingUsed: used])
         performSegue(withIdentifier: "toReserve", sender: self)
+        
+        dataBase.child("Tables").child("table3").updateChildValues([beingUsed: true])
     }
     
     @IBAction func whenTable4Pressed(_ sender: UIButton) {
         table = "table4"
         dataBase.child("Tables").child("table4").updateChildValues([beingUsed: used])
         performSegue(withIdentifier: "toReserve", sender: self)
+        
+        dataBase.child("Tables").child("table4").updateChildValues([beingUsed: true])
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
